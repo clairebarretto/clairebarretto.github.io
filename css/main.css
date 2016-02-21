@@ -1,0 +1,344 @@
+@import url("http://fonts.googleapis.com/css?family=Lato");
+/* line 10, sass/main.scss */
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  background-image: url("img/dark-bg.jpg");
+  background-color: #666;
+  color: #666;
+  margin: 0;
+  line-height: 150%;
+}
+
+/* line 19, sass/main.scss */
+header {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  bottom: auto;
+  z-index: 1000;
+  border-bottom: 1px solid #4C4C4C;
+  background-color: #303030;
+}
+
+/* line 30, sass/main.scss */
+a, .link {
+  color: #268770;
+  border-bottom: 1px dotted #268770;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 38, sass/main.scss */
+nav li {
+  display: inline;
+}
+/* line 42, sass/main.scss */
+nav ul {
+  margin: 0;
+}
+/* line 46, sass/main.scss */
+nav a {
+  color: #ddd;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+  margin: 12px 12px 0px 12px;
+  border-bottom: 1px dashed #268770;
+  display: inline-block;
+}
+/* line 56, sass/main.scss */
+nav .anchors {
+  margin-right: 40px;
+}
+/* line 59, sass/main.scss */
+nav .anchors a:hover {
+  color: #268770;
+  border-bottom: 3px solid #268770;
+}
+/* line 65, sass/main.scss */
+nav .logo .round {
+  color: #268770;
+}
+/* line 69, sass/main.scss */
+nav .logo .icon {
+  color: #fff;
+}
+/* line 73, sass/main.scss */
+nav .header-title {
+  text-transform: uppercase;
+  border: none;
+}
+
+/* line 79, sass/main.scss */
+#container {
+  max-width: 60em;
+  margin: 5em auto;
+  margin-bottom: 3em;
+}
+
+/* line 85, sass/main.scss */
+#wordcloud {
+  width: 100%;
+  height: 250px;
+  opacity: 0.7;
+  margin: 0 auto;
+}
+
+/* line 92, sass/main.scss */
+.main-section {
+  background-color: #EDEDED;
+  background-image: url("img/grey.png");
+  border: 5px solid #262626;
+  box-shadow: 5px 5px 10px #262626;
+  margin-bottom: 1em;
+}
+/* line 99, sass/main.scss */
+.main-section .section-header {
+  padding: 1em;
+  font-size: 1.25em;
+  text-transform: lowercase;
+  background-color: #268770;
+  color: #ddd;
+}
+/* line 107, sass/main.scss */
+.main-section .content {
+  padding: 2em;
+}
+
+/* line 113, sass/main.scss */
+.resume-item .resume-title {
+  border-bottom: 1px dotted #A3A3A3;
+  padding-bottom: 3px;
+  display: block;
+}
+/* line 119, sass/main.scss */
+.resume-item .job {
+  margin-top: 20px;
+}
+
+/* line 124, sass/main.scss */
+.project {
+  clear: both;
+  overflow: auto;
+  padding: 10px 5px 10px 10px;
+}
+/* line 129, sass/main.scss */
+.project .title {
+  border-bottom: 1px dotted #A3A3A3;
+  padding-bottom: 3px;
+  display: block;
+}
+/* line 135, sass/main.scss */
+.project .preview {
+  float: left;
+}
+/* line 139, sass/main.scss */
+.project .desc {
+  margin-left: 310px;
+}
+/* line 143, sass/main.scss */
+.project .thumbnail {
+  width: 275px;
+  height: 200px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 2px #666;
+}
+
+/* line 151, sass/main.scss */
+.about-me-thumbnail {
+  width: 200px;
+  height: 200px;
+  margin-left: 20px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 2px #666;
+}
+
+/* line 159, sass/main.scss */
+.date {
+  float: right;
+}
+
+/* line 163, sass/main.scss */
+.button {
+  background-color: #666;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px #666;
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 5px;
+}
+/* line 174, sass/main.scss */
+.button a {
+  color: #fff;
+  border: none;
+}
+
+/* line 180, sass/main.scss */
+.map {
+  background-image: url("img/vancouver.png");
+  height: 30em;
+}
+
+/* line 185, sass/main.scss */
+.fa {
+  padding-right: 5px;
+}
+
+/* line 189, sass/main.scss */
+.hide {
+  display: none;
+}
+
+/* line 193, sass/main.scss */
+.center {
+  text-align: center;
+}
+
+/* line 197, sass/main.scss */
+.circle {
+  border-radius: 50%;
+}
+
+/* line 201, sass/main.scss */
+.clearfix {
+  overflow: auto;
+}
+
+/* line 205, sass/main.scss */
+.list-no-style {
+  padding-left: 15px;
+}
+
+/* line 209, sass/main.scss */
+.list-no-style > li {
+  list-style-type: none;
+}
+
+/* line 213, sass/main.scss */
+.inline-list > li {
+  float: left;
+  list-style-position: inside;
+  list-style-type: disc;
+  margin-right: 1em;
+}
+
+/* line 220, sass/main.scss */
+.subtext {
+  font-style: italic;
+}
+
+/* line 224, sass/main.scss */
+.no-style {
+  border: none;
+}
+
+@media (max-width: 480px) {
+  /* line 229, sass/main.scss */
+  nav .anchors {
+    display: none;
+  }
+
+  /* line 233, sass/main.scss */
+  .main-section {
+    border-left: none;
+    border-right: none;
+  }
+  /* line 237, sass/main.scss */
+  .main-section .content {
+    padding: 1.25em;
+  }
+
+  /* line 242, sass/main.scss */
+  .project {
+    padding: 0.5em;
+  }
+  /* line 245, sass/main.scss */
+  .project .desc {
+    margin-left: 0;
+    display: inline-block;
+  }
+  /* line 250, sass/main.scss */
+  .project .thumbnail {
+    width: 250px;
+    height: 150px;
+  }
+  /* line 255, sass/main.scss */
+  .project .preview, .project .date, .project .title {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+  /* line 262, sass/main.scss */
+  .project:not(:first-child) {
+    padding-top: 20px;
+  }
+
+  /* line 268, sass/main.scss */
+  #about .preview {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+  /* line 273, sass/main.scss */
+  #about .about-me-thumbnail {
+    margin-left: 0;
+    float: none;
+  }
+
+  /* line 280, sass/main.scss */
+  .resume-item .title:not(:first-child) {
+    padding-top: 20px;
+  }
+  /* line 284, sass/main.scss */
+  .resume-item .date, .resume-item .title {
+    float: none;
+    display: block;
+  }
+
+  /* line 290, sass/main.scss */
+  .list-no-style {
+    padding: 0;
+  }
+}
+@media (max-width: 725px) {
+  /* line 296, sass/main.scss */
+  nav .anchors {
+    display: none;
+  }
+
+  /* line 301, sass/main.scss */
+  #about .preview {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+  /* line 306, sass/main.scss */
+  #about .about-me-thumbnail {
+    margin-left: 0;
+    float: none;
+  }
+
+  /* line 313, sass/main.scss */
+  .resume-item .date, .resume-item .title {
+    float: none;
+    display: block;
+  }
+}
+@media (max-width: 960px) {
+  /* line 322, sass/main.scss */
+  .project .desc {
+    margin-left: 0;
+    display: inline-block;
+  }
+  /* line 327, sass/main.scss */
+  .project .preview, .project .date, .project .title {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
