@@ -21,6 +21,14 @@ module.exports = function(grunt) {
 			}
 		},
 
+		cssmin: {
+			target: {
+				files: {
+					'css/styles.min.css': ['css/styles.css']
+				}
+			}
+		},
+
 		compass: {
 			dist: {
 				options: {
@@ -44,6 +52,7 @@ module.exports = function(grunt) {
 
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
