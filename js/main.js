@@ -2,9 +2,12 @@
 $(document).on("click", ".anchors a", function(evt) {
 	evt.preventDefault();
 
+  var canvas = $("#canvas").get(0);
 	var parent = $(this).attr("href");
+  var padding = isInViewport(canvas) ? 110 : 60;
+
 	$("html, body").animate({
-		scrollTop: $(parent).offset().top - 60
+		scrollTop: $(parent).offset().top - padding
 	}, 500);
 });
 
@@ -18,6 +21,14 @@ $(window).bind('scroll', function() {
 		 $('header').removeClass('fixed');
 	 }
 });
+
+// Returns true if part of the element is visible on the screen
+function isInViewport(elem) {
+  var top = elem.getBoundingClientRect().top;
+  var bottom = elem.getBoundingClientRect().bottom;
+
+  return top < window.innerHeight && bottom >= 0;
+}
 
 // Particles.js configuration
 var config = {

@@ -29,7 +29,8 @@ header {
 	-moz-background-size: 100% 3px;
 	background-size: 100% 5px;
 	background-repeat: no-repeat;
-	background-position-y: bottom;
+	background-position: 0px 48px;
+
 }
 
 a {
@@ -146,8 +147,8 @@ nav {
 /** Styles for the ABOUT ME section */
 #about {
 	img {
-		width: 120px; 
-		height: 120px;
+		width: 100px; 
+		height: 100px;
 		margin-right: 20px;
 	}
 	img.seahawks {
