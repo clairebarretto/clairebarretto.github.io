@@ -6,19 +6,29 @@
   	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   	<meta name="HandheldFriendly" content="true">
   	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
-  	<link rel="stylesheet" href="css/styles.min.css"/>
+  	<link rel="stylesheet" href="css/styles.min.css" />
+	<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic' />
 </head>
 <body>
+	<!-- CANVAS LANDING -->
+	<div id="canvas">
+	  	<div class="canvas-text">
+	  		<h3 class="subtext">Hello, I'm</h3>
+	  		<h1 class="name">Claire Barretto</h1>
+	  		<i  class="arrow fa fa-chevron-down fa-2x bolder"></i>
+	  	</div>
+	</div>
+	<!-- NAVIGATION -->
 	<header>
 		<nav>
-			<ul class="pull-left">
+			<ul class="header-title">
 				<span class="logo fa-stack">
 					<i class="fa fa-circle fa-stack-2x round"></i>
-					<i class="fa fa-code fa-stack-1x icon"></i>
+					<i class="fa fa-stack-1x icon">C</i>
 				</span>
-				<a class="header-title">Claire Barretto</a>
+				<a>Claire Barretto</a>
 			</ul>
-			<ul class="pull-right anchors">
+			<ul class="anchors">
 				<a href="#about">About</a>
 				<a href="#resume">Resume</a>
 				<a href="#projects">Projects</a>
@@ -26,210 +36,270 @@
 			</ul>
 		</nav>
 	</header>
+	<!-- MAIN CONTENT -->
 	<div id="container">
 		<!-- ABOUT ME -->
 		<section id="about" class="main-section">
-			<div class="section-header"><span><i class="fa fa-user"></i> About Me</span></div>
+			<span class="section-icon"><i class="fa fa-user fa-5x"></i></span>
 			<div class="content">
-				<div class="preview pull-right">
-					<a href="img/safeco.png" class="no-style" data-lightbox="safeco"><img src="img/safeco.png" class="about-me-thumbnail circle"/></a>
+				<div class="section-title"><span>About Me</span></div>
+				<p>
+					Hey! I'm Claire. I'm a recent graduate of the Computer Science program at the <a target="_blank" href="https://www.cs.ubc.ca/" class="link">University of British Columbia</a>. I'm primarily a front-end web developer with two co-op positions working client-side under my belt. I am eager to continue expanding my front-end skill set, while also gaining more practical experience in back-end and mobile app development as well. I am passionate about design and technology, and am excited to keep pace with the rapidly evolving tech world we live in today. In my spare time, you can find me keeping up with the <a target="_blank" href="http://www.seahawks.com/" class="link">Seahawks</a> and especially the <a target="_blank" href="http://www.mariners.com" class="link">Mariners</a>. Go M's!
+				</p>
+				<div class="center">
+					<img src="img/logos/mariners-logo.gif" class="circle" />
+					<img src="img/logos/mac.png" class="circle" />
+					<img src="img/logos/seahawks-logo.jpg" class="circle seahawks" />
 				</div>
-				<p class="about-me">Hey! I'm Claire. I'm a recent graduate of the Computer Science program at the University of British Columbia in Vancouver, BC. I am primarily a front-end web developer with two co-op positions working client-side under my belt. I am eager to continue expanding my front-end skill set, while also gaining more practical experience in back-end development. I am passionate about design and technology, and am excited to keep pace with the rapidly evolving tech world we live in today.</p>
-
-				<p>In my spare time, you can find me keeping up with the <a target="_blank" href="http://www.mariners.com">Mariners</a>.</p>
 			</div>
 		</section>
 		<!-- RESUME -->
 		<section id="resume" class="main-section">
-			<div class="section-header"><span><i class="fa fa-file-text"></i> Resume</span></div>
+			<span class="section-icon"><i class="fa fa-file-text-o fa-5x"></i></span>
 			<div class="content">
-				<!-- EDUCATION -->
-				<div class="resume-item">
-					<h3 class="resume-title"><i class="fa fa-graduation-cap"></i> Education</h3>
-					<ul class="list-no-style">
-						<li>
-							<div class="title">
-								<strong><a target="_blank" href="https://www.ubc.ca/">University of British Columbia</a>, Vancouver, BC</strong>
-								<small class="date"><i class="fa fa-calendar"></i> September 2010 - December 2015</i></small>
+				<div class="section-title"><span>Resume</span></div>
+				<ul class="timeline">
+					<li>
+						<div class="timeline-content">
+							<h3 class="title"><i class="fa fa-graduation-cap icon"></i> Education</h3>
+							<div class="box">
+								<span class="resume-date">2015</span>							
+								<div class="clearfix">
+									<img src="img/logos/ubc-logo.png" class="ubc-logo resume-logo" />
+									<div class="subcontent">
+										<span class="role">Bachelor of Arts, Computer Science</span>
+										<div>
+											<span><i class="fa fa-building-o"></i> University of British Columbia</span><br/>
+											<span><i class="fa fa-location-arrow"></i> Vancouver, BC</span><br/>
+											<span><i class="fa fa-calendar"></i> September 2010 - December 2015</span>
+										</div>
+									</div>
+								</div>
+								<ul class="content-list">
+									<li>Notable Courses: Advanced Software Engineering, Relational Databases, Algorithm Design & Analysis, Computer Hardware and Operating Systems, Internet Computing, Functional Programming</li>
+									<li>Notable Electives: Financial Accounting, Money & Banking, International Trade, Microeconomics, Macroeconomics</li>
+								</ul>							
 							</div>
-						</li>
-						<li>Bachelor of Arts, Computer Science</li>
-					</ul>
-				</div>
-				<!-- WORK EXP -->
-				<div class="resume-item">
-					<h3 class="resume-title"><i class="fa fa-building"></i> Work Experience</h3>
-					<ul class="list-no-style">
-						<li class="job">
-							<div class="title">
-								<strong><a target="_blank" href="http://www.bccrc.ca/">BC Cancer Agency</a>, Vancouver, BC</strong>
-								<small class="date"><i class="fa fa-calendar"></i> May 2015 - August 2015</i></small>
+						</div>
+					</li>
+					<li>
+						<div class="timeline-content">
+							<h3 class="title"><i class="fa fa-bank icon"></i> Work Experience</h3>
+							<div class="box">
+								<span class="resume-date">2015</span>								
+								<div class="clearfix">
+									<img src="img/logos/bc-cancer-logo.png" class="bc-cancer-logo resume-logo" />
+									<div class="subcontent">
+										<span class="role">Front End Developer, Co-op</span>
+										<div>
+											<span><i class="fa fa-building-o"></i> BC Cancer Agency</span><br/>
+											<span><i class="fa fa-location-arrow"></i> Vancouver, BC</span><br/>
+											<span><i class="fa fa-calendar"></i> May 2015 - August 2015</span>
+										</div>
+									</div>
+								</div>
+								<ul class="content-list">
+									<li>Implemented components in JavaScript for a web-based visualization tool that allows users to interactively analyze large cancer genomic datasets</li>
+									<li>Built scalable data visualizations that aggregates millions of data points using d3.js</li>
+									<li>Created and optimized JSON-based queries using Elasticsearch</li>
+								</ul>	
 							</div>
-							<span class="subtext role">Front End Developer, Co-op</span>
-							<ul>
-								<li>Implemented components in JavaScript for a web-based visualization tool that allows users to interactively analyze large cancer genomic datasets</li>
-								<li>Built scalable data visualizations that aggregates millions of data points using d3.js</li>
-								<li>Created and optimized JSON-based queries using Elasticsearch</li>
-							</ul>
-						</li>
-						<li class="job">
-							<div class="title">
-								<strong><a target="_blank" href="http://www.galdosinc.com/">Galdos Systems Inc</a>, Vancouver, BC</strong>
-								<small class="date"><i class="fa fa-calendar"></i> January 2014 - December 2014</i></small>
-							</div>
-							<span class="subtext role">Junior Front End Developer, Co-op</span>
-							<ul>
-								<li>Developed a web application for a registry platform using modern web technologies such as HTML5, CSS3, JavaScript (jQuery, Backbone.js) with extensive AJAX (XML/JSON) usage</li>
-								<li>Developed reusable JavaScript widgets to be used in future web clients</li>
-								<li>Integrated Google Maps to view and modify spatial data (GM Drawing Library)</li>
-								<li>Created an interactive query builder that allows users to build custom complex queries by using logical combinations of free text or spatial filters, with support for nested queries</li>
-								<li>Built dashboard visualization tools using d3.js, vis.js and Google Charts</li>
-							</ul>
-						</li>								
-					</ul>
-				</div>
-				<!-- SKILLS -->
-				<div class="resume-item">
-					<h3 class="resume-title"><i class="fa fa-code"></i> Technical Skills</h3>
-					<ul class="list-no-style">
-						<li>
-							<span id="toggle-skills" class="center link" data-show="list">View as List</span>
-						</li>
-					</ul>
-					<div id="wordcloud"></div>
-					<div id="skills-list" class="hide clearfix">
-						<ul class="list-no-style">
-							<li>
-								<strong>Programming Languages</strong>
-								<ul class="inline-list clearfix">
-									<li>HTML5</li>
-									<li>CSS3</li>
-									<li>JavaScript</li>
-									<li>MySQL</li>
-									<li>Java</li>
-									<li>PHP</li>
+							<div class="box">
+								<span class="resume-date">2014</span>								
+								<div class="clearfix">
+									<img src="img/logos/galdos-logo.gif" class="galdos-logo resume-logo" />
+									<div class="subcontent">
+										<span class="role">Junior Front End Developer, Co-op</span>
+										<div>
+											<span><i class="fa fa-building-o"></i> Galdos Systems Inc</span><br/>
+											<span><i class="fa fa-location-arrow"></i> Vancouver, BC</span><br/>
+											<span><i class="fa fa-calendar"></i> January 2014 - December 2014</span>
+										</div>
+									</div>
+								</div>						
+								<ul class="content-list">
+									<li>Developed a web application for a registry platform using modern web technologies such as HTML5, CSS3, JavaScript (jQuery, Backbone.js) with extensive AJAX (XML/JSON) usage</li>
+									<li>Developed reusable JavaScript widgets to be used in future web clients</li>
+									<li>Integrated Google Maps to view and modify spatial data (GM Drawing Library)</li>
+									<li>Created an interactive query builder that allows users to build custom complex queries by using logical combinations of free text or spatial filters, with support for nested queries</li>
+									<li>Built dashboard visualization tools using d3.js, vis.js and Google Charts</li>
 								</ul>
-							</li>
-							<li>
-								<br/>
-								<strong>Libraries, Frameworks, Tools, and more...</strong>
-								<ul class="inline-list clearfix">
-									<li>Bootstrap</li>
-									<li>SASS</li>
-									<li>jQuery</li>
-									<li>Backbone.js</li>
-									<li>AJAX</li>
-									<li>XML</li>
-									<li>JSON</li>
-									<li>d3.js</li>
-									<li>Elasticsearch</li>
-									<li>Git</li>
-									<li>SVN</li>
-									<li>Grunt</li>
-									<li>Eclipse</li>
-									<li>Stash</li>
-									<li>JIRA</li>
-									<li>Confluence</li>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="timeline-content">
+							<h3 class="title"><i class="fa fa-code icon"></i> Technical Skills</h3>
+							<div class="clearfix">
+								<div class="skills-progress">
+									<span class="skills-header">Web Development and Programming Languages</span>
+									<div class="skill-bg">
+										<div class="skill-inner teal w-90">
+											<span class="tech">HTML5</span>
+											<span class="percentage">90%</span>
+										</div>
+									</div>
+									<div class="skill-bg">
+										<div class="skill-inner green w-80">
+											<span class="tech">CSS3</span>
+											<span class="percentage">80%</span>
+										</div>
+									</div>
+									<div class="skill-bg">
+										<div class="skill-inner blue w-90">
+											<span class="tech">JavaScript</span>
+											<span class="percentage">90%</span>
+
+										</div>
+									</div>
+									<div class="skill-bg">
+										<div class="skill-inner orange w-50">
+											<span class="tech">SQL</span>
+											<span class="percentage">50%</span>
+										</div>
+									</div>
+									<div class="skill-bg">
+										<div class="skill-inner red w-50">
+											<span class="tech">Java</span>
+											<span class="percentage">50%</span>
+										</div>
+									</div>
+									<div class="skill-bg">
+										<div class="skill-inner dark-blue w-40">
+											<span class="tech">PHP</span>
+											<span class="percentage">40%</span>
+										</div>
+									</div>								
+								</div>
+							</div>
+						</div>				
+					</li>
+					<li>
+						<div class="timeline-content">
+							<br/>
+							<div class="box">
+								<span class="skills-header">Libraries, Frameworks and Tools I'm familiar with...</span>
+								<ul class="skills-list">
+									<li><span class="bolder">CSS:</span> Bootstrap 3, SASS</li>
+									<li><span class="bolder">JavaScript:</span> jQuery, Backbone.js, Underscore.js, AJAX, XML, JSON</li>
+									<li><span class="bolder">Data Visualization (JavaScript):</span> d3.js, vis.js, Google Charts</li>
+									<li><span class="bolder">Databases:</span> MySQL</li>
+									<li><span class="bolder">Search Engines:</span> Elasticsearch</li>
+									<li><span class="bolder">Tools:</span> Grunt, Git, SVN, Stash, JIRA, Confluence</li>
+									<li><span class="bolder">Operating Systems:</span> Mac OS X, Windows</li>
 								</ul>
-							</li>
-						</ul>
+							</div>
+							<div class="box">
+								<span class="resume-date">now</span>
+								<div class="clearfix">
+									<span class="skills-header">Currently learning...</span>
+									<ul class="skills-list">
+										<li>Python</li>
+										<li>AngularJS (1.0, 2.0)</li>
+										<li>ECMAScript 2015 / ES6</li>
+										<li>Node.js</li>
+									</ul>
+								</div>
+							</div>	
+						</div>				
+					</li>					
+					<div class="center">
+						<button class="button">
+							<i class="fa fa-download"></i>
+							<a target="_blank" href="http://clairebarretto.github.io/files/resume_no_phone_address.pdf">Download Resume</a>
+						</button>
 					</div>
-				</div>
-				<!-- DOWNLOAD PDF -->
-				<div class="center">
-					<br/>
-					<button class="button">
-						<i class="fa fa-download"></i>
-						<a href="files/resume_no_phone_address.pdf" download="claire_barretto_resume.pdf">Download Resume</a>
-					</button>
-				</div>
+				</ul>		  
 			</div>
 		</section>
 		<!-- PROJECTS -->
 		<section id="projects" class="main-section">
-			<div class="section-header"><span><i class="fa fa-laptop"></i> Projects</span></div>
+			<span class="section-icon"><i class="fa fa-code fa-5x"></i></span>
 			<div class="content">
+				<div class="section-title"><span>Projects</span></div>
 				<div class="project">
-					<div class="preview">
-						<a href="img/projects/bccancer.png" class="no-style" data-lightbox="bccancer"><img src="img/projects/bccancer.png" class="thumbnail"/></a>
-					</div>
-					<div class="desc">
-						<div class="title">
-							<strong>Cancer Genomic Visualization Tool</strong>
-							<small class="date"><i class="fa fa-calendar"></i> May 2015 - August 2015</i></small>
-						</div>
-						<div>
+					<div class="project-header">
+						<span class="title">Cancer Genomic Visualization Tool</span>
+						<small class="date"><i class="fa fa-calendar"></i> May 2015 - August 2015</i></small>
+					</div>	
+					<div class="box">			
+						<p class="preview">
+							<a href="img/projects/bccancer.png" data-lightbox="bccancer"><img src="img/projects/bccancer.png" class="thumbnail"/></a>
+						</p>
+						<div class="desc">
 							<p>During my co-op term at the BC Cancer Agency, I worked on developing a web-based visualization tool that allows users to interactively analyze large cancer genomic datasets. The tool is highly flexible and allows users to analyze datasets in many ways, such as analyzing multiple data types in a single view or using multiple views to analyze a single dataset.</p>
 
-							<p><strong>Skills:</strong> HTML, CSS, JavaScript, d3.js, Elasticsearch</p>
+							<p><span class="bolder">Skills:</span> HTML5, CSS3, JavaScript, d3.js, Elasticsearch</p>
 
-							<p><a href="files/bc_cancer_coop_presentation.pdf" download="claire_barretto_presentation.pdf"><i class="fa fa-file-text-o"></i> Work Term Presentation Slides</a></p>
+							<p><a target="_blank" href="http://clairebarretto.github.io/files/bc_cancer_coop_presentation.pdf" class="link"><i class="fa fa-file-text-o"></i> Work Term Presentation Slides</a></p>
 						</div>
 					</div>
 				</div>
 				<div class="project">
-					<div class="preview">
-						<a href="img/projects/gobind.png" class="no-style" data-lightbox="gobind"><img src="img/projects/gobind.png" class="thumbnail"/></a>
-					</div>
-					<div class="desc">
-						<div class="title">
-							<strong>School Management System</strong>
-							<small class="date"><i class="fa fa-calendar"></i> Jan 2015 - April 2015</i></small>
-						</div>
-						<div>
-							<p>Developed a web application for a local non-profit organization (<a target="_blank" href="http://www.gobindsarvar.com/">Gobind Sarvar</a>) which allows administrators, teachers and students to manage all aspects of the school. In addition to typical school management system features, the system also includes an automated student registration process, a mass emailing system, and importing/exporting tools.</p>
+					<div class="project-header">
+						<span class="title">School Management System</span>
+						<small class="date"><i class="fa fa-calendar"></i> Jan 2015 - April 2015</i></small>
+					</div>				
+					<div class="box">
+						<p class="preview">
+							<a href="img/projects/gobind.png" data-lightbox="gobind"><img src="img/projects/gobind.png" class="thumbnail"/></a>
+						</p>
+						<div class="desc">
+							<p>Developed a web application for a local non-profit organization (<a target="_blank" href="http://www.gobindsarvar.com/" class="link">Gobind Sarvar</a>) which allows administrators, teachers and students to manage all aspects of a school. In addition to typical school management system features, the system also includes an automated student registration process, a mass emailing system, and importing/exporting tools.</p>
 
-							<p><strong>Skills:</strong> HTML, CSS, Bootstrap, JavaScript, jQuery, Backbone.js, PHP, MySQL</p>
+							<p><span class="bolder">Skills:</span> HTML5, CSS3, Bootstrap, JavaScript, jQuery, Backbone.js, PHP, MySQL</p>
 
-							<p><a target="_blank" href="https://github.com/clairebarretto/sourcecraft-gen"><i class="fa fa-code"></i> GitHub Link</a></p>
+							<p><a target="_blank" href="https://github.com/clairebarretto/gsims" class="link"><i class="fa fa-code"></i> GitHub Link</a></p>
 						</div>
 					</div>
 				</div>					
 				<div class="project">
-					<div class="preview">
-						<a href="img/projects/galdos.png" class="no-style" data-lightbox="galdos"><img src="img/projects/galdos.png" class="thumbnail"/></a>
-					</div>
-					<div class="desc">
-						<div class="title">
-							<strong>INdicio Web Application</strong>
-							<small class="date"><i class="fa fa-calendar"></i> January 2014 - December 2014</i></small>
-						</div>
-						<div>
+					<div class="project-header">
+						<span class="title">INdicio Web Application</span>
+						<small class="date"><i class="fa fa-calendar"></i> January 2014 - December 2014</i></small>
+					</div>	
+					<div class="box">			
+						<p class="preview">
+							<a href="img/projects/galdos.png" data-lightbox="galdos"><img src="img/projects/galdos.png" class="thumbnail"/></a>
+						</p>
+						<div class="desc">
 							<p>During my co-op term at Galdos Systems, I worked to develop an internal web application that was used to showcase the capabilities of the company's flagship product, INdicio. INdicio is a registry platform that is part database, part geographic information system, and part document management system which allows users to efficiently organize and manage data.</p>
 
-							<p><strong>Skills:</strong> HTML, CSS, Bootstrap, JavaScript, jQuery, Backbone.js, d3.js, vis.js, JavaScript Google Maps API, XML</p>
+							<p><span class="bolder">Skills:</span> HTML5, CSS3, Bootstrap, JavaScript, jQuery, Backbone.js, d3.js, vis.js, JavaScript Google Maps API, XML</p>
 						</div>
 					</div>
 				</div>
 				<div class="project">
-					<div class="preview">
-						<a href="img/projects/minecraft.png" class="no-style" data-lightbox="minecraft"><img src="img/projects/minecraft.png" class="thumbnail"/></a>
-					</div>
-					<div class="desc">
-						<div class="title">
-							<strong>Sourcecraft Visualization</strong>
-							<small class="date"><i class="fa fa-calendar"></i> September 2013 - December 2013</i></small>
-						</div>
-						<div>
+					<div class="project-header">
+						<span class="title">Sourcecraft Visualization</span>
+						<small class="date"><i class="fa fa-calendar"></i> September 2013 - December 2013</i></small>
+					</div>			
+					<div class="box">	
+						<p class="preview">
+							<a href="img/projects/minecraft.png" data-lightbox="minecraft"><img src="img/projects/minecraft.png" class="thumbnail"/></a>
+						</p>
+						<div class="desc">
 							<p>Used Minecraft to visualize the physical structure of a Java code base. Each building represents a class, and the width and height of each building is determined by the number of methods and attributes within a class. Using static code analysis tools, we also visualize the methods with bugs within a class with coloured bands around the building.</p>
 
-							<p><strong>Skills:</strong> Java, XML</p>
+							<p><span class="bolder">Skills:</span> Java, XML</p>
 
 
-							<p><a target="_blank" href="https://www.youtube.com/watch?feature=player_embedded&v=bi8AiFnx9pU"><i class="fa fa-youtube-play"></i> Quick Demo (maximum one minute)</a></p>
+							<p><a target="_blank" href="https://www.youtube.com/watch?feature=player_embedded&v=bi8AiFnx9pU" class="link"><i class="fa fa-youtube-play"></i> Quick Demo (maximum one minute)</a></p>
 
-							<p><a target="_blank" href="https://www.youtube.com/watch?feature=player_embedded&v=ZLHB7dXbOGA"><i class="fa fa-youtube-play"></i> Comprehensive Demo</a></p>
+							<p><a target="_blank" href="https://www.youtube.com/watch?feature=player_embedded&v=ZLHB7dXbOGA" class="link"><i class="fa fa-youtube-play"></i> Comprehensive Demo</a></p>
 
-							<p><a target="_blank" href="https://github.com/clairebarretto/sourcecraft-gen"><i class="fa fa-code"></i> GitHub Link</a></p>
+							<p><a target="_blank" href="https://github.com/clairebarretto/sourcecraft-gen" class="link"><i class="fa fa-code"></i> GitHub Link</a></p>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</section>			
 		<!-- CONTACT -->
 		<section id="contact" class="main-section">
-			<div class="section-header"><span><i class="fa fa-envelope"></i> Contact</span></div>
+			<span class="section-icon"><i class="fa fa-envelope fa-5x"></i></span>
 			<div class="content map">
+				<div class="section-title"><span>Contact</span></div>
+				<br/>
 				<button class="button">
 					<i class="fa fa-envelope"></i> 
 					<a href="mailto:claireabarretto@gmail.com">Email</a>
@@ -245,7 +315,7 @@
 					<a target="_blank" href="https://github.com/clairebarretto">GitHub</a>
 				</button>
 			</div>
-		</section>	
+		</section>			
 	</div>			
 	<!-- SCRIPTS -->
 	<script src="js/scripts.min.js"></script>

@@ -2085,14 +2085,6 @@
   content: "\f295";
 }
 
-/*!
- * jQCloud 2.0.1
- * Copyright 2011 Luca Ongaro (http://www.lucaongaro.eu)
- * Copyright 2013 Daniel White (http://www.developerdan.com)
- * Copyright 2014 Damien "Mistic" Sorel (http://www.strangeplanet.fr)
- * Licensed under MIT (http://opensource.org/licenses/MIT)
- */
-div.jqcloud{overflow:hidden;position:relative}div.jqcloud span{padding:0}div.jqcloud{font-family:Helvetica,Arial,sans-serif;font-size:10px;line-height:normal}div.jqcloud a{font-size:inherit;text-decoration:none}div.jqcloud span.w10{font-size:550%}div.jqcloud span.w9{font-size:500%}div.jqcloud span.w8{font-size:450%}div.jqcloud span.w7{font-size:400%}div.jqcloud span.w6{font-size:350%}div.jqcloud span.w5{font-size:300%}div.jqcloud span.w4{font-size:250%}div.jqcloud span.w3{font-size:200%}div.jqcloud span.w2{font-size:150%}div.jqcloud span.w1{font-size:100%}div.jqcloud{color:#09f}div.jqcloud a{color:inherit}div.jqcloud a:hover,div.jqcloud span.w10,div.jqcloud span.w8,div.jqcloud span.w9{color:#0cf}div.jqcloud span.w7{color:#39d}div.jqcloud span.w6{color:#90c5f0}div.jqcloud span.w5{color:#90a0dd}div.jqcloud span.w4{color:#90c5f0}div.jqcloud span.w3{color:#a0ddff}div.jqcloud span.w2{color:#9ce}div.jqcloud span.w1{color:#aab5f0}
 /* Preload images */
 body:after {
   content: url(../img/close.png) url(../img/loading.gif) url(../img/prev.png) url(../img/next.png);
@@ -2300,168 +2292,424 @@ body.lb-disable-scrolling {
   opacity: 1;
 }
 
-@import url("http://fonts.googleapis.com/css?family=Lato");
-/* line 10, sass/main.scss */
+/* line 8, sass/main.scss */
 body {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  background-image: url("img/dark-bg.jpg");
-  background-color: #666;
-  color: #666;
+  font-family: 'Open Sans';
+  background-image: url("../img/dark-bg.jpg");
+  background-color: #777;
+  color: #777;
   margin: 0;
   line-height: 150%;
+  font-size: 0.95em;
 }
 
-/* line 19, sass/main.scss */
+/* line 18, sass/main.scss */
 header {
   width: 100%;
-  height: 50px;
-  position: fixed;
-  top: 0;
-  bottom: auto;
-  z-index: 1000;
-  border-bottom: 1px solid #4C4C4C;
-  background-color: #303030;
+  height: 52px;
+  line-height: 52px;
+  background-color: #FEFEFE;
+  /** Rainbow styling https://codepen.io/timteeling/pen/aiFcn */
+  background-image: -webkit-linear-gradient(0deg, #1fada2 16.66667%, #1fad66 16.66667%, #1fad66 33.33333%, #8aad1f 33.33333%, #8aad1f 50%, #ad5a1f 50%, #ad5a1f 66.66667%, #ad361f 66.66667%, #ad361f 83.33333%, #ad1fad 83.33333%);
+  background-image: -moz-linear-gradient(0deg, #1fada2 16.66667%, #1fad66 16.66667%, #1fad66 33.33333%, #8aad1f 33.33333%, #8aad1f 50%, #ad5a1f 50%, #ad5a1f 66.66667%, #ad361f 66.66667%, #ad361f 83.33333%, #ad1fad 83.33333%);
+  background-image: linear-gradient(to right, #1fada2 16.66667%, #1fad66 16.66667%, #1fad66 33.33333%, #8aad1f 33.33333%, #8aad1f 50%, #ad5a1f 50%, #ad5a1f 66.66667%, #ad361f 66.66667%, #ad361f 83.33333%, #ad1fad 83.33333%);
+  -webkit-background-size: 100% 3px;
+  -moz-background-size: 100% 3px;
+  background-size: 100% 5px;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
 }
 
-/* line 30, sass/main.scss */
-a, .link {
-  color: #268770;
-  border-bottom: 1px dotted #268770;
+/* line 35, sass/main.scss */
+a {
   text-decoration: none;
-  cursor: pointer;
 }
 
-/* line 38, sass/main.scss */
+/* line 40, sass/main.scss */
 nav li {
   display: inline;
 }
-/* line 42, sass/main.scss */
+/* line 44, sass/main.scss */
 nav ul {
   margin: 0;
 }
-/* line 46, sass/main.scss */
+/* line 48, sass/main.scss */
 nav a {
-  color: #ddd;
+  color: #777;
   font-size: 14px;
   letter-spacing: 2px;
   text-transform: lowercase;
-  margin: 12px 12px 0px 12px;
-  border-bottom: 1px dashed #268770;
+  margin: 0px 12px;
   display: inline-block;
 }
-/* line 56, sass/main.scss */
+/* line 57, sass/main.scss */
 nav .anchors {
   margin-right: 40px;
+  float: right;
 }
-/* line 59, sass/main.scss */
+/* line 61, sass/main.scss */
 nav .anchors a:hover {
   color: #268770;
-  border-bottom: 3px solid #268770;
+  border-bottom: 2px solid #268770;
+  line-height: 20px;
 }
-/* line 65, sass/main.scss */
+/* line 68, sass/main.scss */
 nav .logo .round {
   color: #268770;
 }
-/* line 69, sass/main.scss */
+/* line 72, sass/main.scss */
 nav .logo .icon {
   color: #fff;
 }
-/* line 73, sass/main.scss */
+/* line 76, sass/main.scss */
 nav .header-title {
+  float: left;
+}
+/* line 79, sass/main.scss */
+nav .header-title a {
   text-transform: uppercase;
   border: none;
+  letter-spacing: 4px;
 }
 
-/* line 79, sass/main.scss */
+/* line 87, sass/main.scss */
 #container {
   max-width: 60em;
   margin: 5em auto;
   margin-bottom: 3em;
 }
 
-/* line 85, sass/main.scss */
-#wordcloud {
-  width: 100%;
-  height: 250px;
-  opacity: 0.7;
-  margin: 0 auto;
-}
-
-/* line 92, sass/main.scss */
+/** Styles for all sections */
+/* line 94, sass/main.scss */
 .main-section {
-  background-color: #EDEDED;
-  background-image: url("img/grey.png");
-  border: 5px solid #262626;
-  box-shadow: 5px 5px 10px #262626;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
+  background-color: #FEFEFE;
+  box-shadow: 5px 5px 5px #262626;
+  border-left: 15px solid #268770;
 }
-/* line 99, sass/main.scss */
-.main-section .section-header {
-  padding: 1em;
-  font-size: 1.25em;
+/* line 100, sass/main.scss */
+.main-section .section-icon {
+  float: right;
+  color: #fff;
+  color: #F1F1F1;
+}
+/* line 105, sass/main.scss */
+.main-section .section-icon .fa-file-text-o {
+  margin-top: 6px;
+}
+/* line 110, sass/main.scss */
+.main-section .section-title {
+  font-size: 2em;
+  color: #268770;
   text-transform: lowercase;
-  background-color: #268770;
-  color: #ddd;
+  padding-bottom: 30px;
 }
-/* line 107, sass/main.scss */
+/* line 116, sass/main.scss */
+.main-section .section-title span {
+  border-bottom: 2px solid #268770;
+}
+/* line 121, sass/main.scss */
 .main-section .content {
-  padding: 2em;
+  padding: 2.5em;
 }
 
-/* line 113, sass/main.scss */
-.resume-item .resume-title {
-  border-bottom: 1px dotted #A3A3A3;
-  padding-bottom: 3px;
-  display: block;
+/** Canvas */
+/* line 127, sass/main.scss */
+#canvas {
+  background-color: #222;
+  position: relative;
 }
-/* line 119, sass/main.scss */
-.resume-item .job {
-  margin-top: 20px;
+/* line 131, sass/main.scss */
+#canvas .canvas-text {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+/* line 137, sass/main.scss */
+#canvas .name, #canvas .subtext, #canvas .arrow {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 5px;
+  width: 100%;
 }
 
-/* line 124, sass/main.scss */
-.project {
-  clear: both;
-  overflow: auto;
-  padding: 10px 5px 10px 10px;
+/** Styles for the ABOUT ME section */
+/* line 148, sass/main.scss */
+#about img {
+  width: 120px;
+  height: 120px;
+  margin-right: 20px;
 }
-/* line 129, sass/main.scss */
-.project .title {
-  border-bottom: 1px dotted #A3A3A3;
-  padding-bottom: 3px;
-  display: block;
+/* line 153, sass/main.scss */
+#about img.seahawks {
+  opacity: 0.8;
 }
-/* line 135, sass/main.scss */
-.project .preview {
+
+/** Styles for the RESUME section */
+/* line 160, sass/main.scss */
+#resume .timeline {
+  list-style: none;
+  padding-left: 10px;
+}
+/* line 165, sass/main.scss */
+#resume .timeline-content {
+  padding-left: 35px;
+}
+/* line 168, sass/main.scss */
+#resume .timeline-content .icon {
+  margin-left: -50px;
+}
+/* line 172, sass/main.scss */
+#resume .timeline-content .resume-date {
+  margin-left: -70px;
+  float: left;
+  font-size: smaller;
+  background-color: #268770;
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+/* line 182, sass/main.scss */
+#resume .timeline-content .box {
+  background-color: #f9f9f9;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+/* line 189, sass/main.scss */
+#resume .timeline-content .subcontent {
   float: left;
 }
-/* line 139, sass/main.scss */
-.project .desc {
+/* line 195, sass/main.scss */
+#resume .skills-progress .skill-bg {
+  background-color: #E6E6E6;
+  height: 24px;
+  margin-top: 8px;
+}
+/* line 201, sass/main.scss */
+#resume .skills-progress .skill-inner {
+  padding: 0px 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  line-height: 24px;
+  height: 24px;
+}
+/* line 209, sass/main.scss */
+#resume .skills-progress .tech, #resume .skills-progress .percentage {
+  color: #fff;
+  font-size: smaller;
+}
+/* line 214, sass/main.scss */
+#resume .skills-progress .tech {
+  float: left;
+}
+/* line 218, sass/main.scss */
+#resume .skills-progress .percentage {
+  float: right;
+}
+/* line 222, sass/main.scss */
+#resume .skills-progress .w-100 {
+  width: 100%;
+}
+/* line 223, sass/main.scss */
+#resume .skills-progress .w-95 {
+  width: 95%;
+}
+/* line 224, sass/main.scss */
+#resume .skills-progress .w-90 {
+  width: 90% !important;
+}
+/* line 225, sass/main.scss */
+#resume .skills-progress .w-85 {
+  width: 85%;
+}
+/* line 226, sass/main.scss */
+#resume .skills-progress .w-80 {
+  width: 80%;
+}
+/* line 227, sass/main.scss */
+#resume .skills-progress .w-75 {
+  width: 75%;
+}
+/* line 228, sass/main.scss */
+#resume .skills-progress .w-70 {
+  width: 70%;
+}
+/* line 229, sass/main.scss */
+#resume .skills-progress .w-65 {
+  width: 65%;
+}
+/* line 230, sass/main.scss */
+#resume .skills-progress .w-60 {
+  width: 60%;
+}
+/* line 231, sass/main.scss */
+#resume .skills-progress .w-55 {
+  width: 55%;
+}
+/* line 232, sass/main.scss */
+#resume .skills-progress .w-50 {
+  width: 50%;
+}
+/* line 233, sass/main.scss */
+#resume .skills-progress .w-45 {
+  width: 45%;
+}
+/* line 234, sass/main.scss */
+#resume .skills-progress .w-40 {
+  width: 40%;
+}
+/* line 235, sass/main.scss */
+#resume .skills-progress .w-35 {
+  width: 35%;
+}
+/* line 236, sass/main.scss */
+#resume .skills-progress .w-30 {
+  width: 30%;
+}
+/* line 237, sass/main.scss */
+#resume .skills-progress .w-25 {
+  width: 25%;
+}
+/* line 238, sass/main.scss */
+#resume .skills-progress .w-20 {
+  width: 20%;
+}
+/* line 239, sass/main.scss */
+#resume .skills-progress .w-15 {
+  width: 15%;
+}
+/* line 240, sass/main.scss */
+#resume .skills-progress .w-10 {
+  width: 10%;
+}
+/* line 242, sass/main.scss */
+#resume .skills-progress .teal {
+  background-color: #1EAEA2;
+}
+/* line 243, sass/main.scss */
+#resume .skills-progress .green {
+  background-color: #5CB85C;
+}
+/* line 244, sass/main.scss */
+#resume .skills-progress .blue {
+  background-color: #5BC0DE;
+}
+/* line 245, sass/main.scss */
+#resume .skills-progress .orange {
+  background-color: #F0AD4E;
+}
+/* line 246, sass/main.scss */
+#resume .skills-progress .red {
+  background-color: #D9534F;
+}
+/* line 247, sass/main.scss */
+#resume .skills-progress .dark-blue {
+  background-color: #337AB7;
+}
+/* line 250, sass/main.scss */
+#resume .role, #resume .skills-header {
+  font-weight: 600;
+}
+/* line 254, sass/main.scss */
+#resume h3.title {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+/* line 259, sass/main.scss */
+#resume .resume-logo {
+  margin-top: 15px;
+  margin-right: 20px;
+  float: right;
+}
+/* line 265, sass/main.scss */
+#resume .ubc-logo {
+  width: 163px;
+  height: 50px;
+}
+/* line 270, sass/main.scss */
+#resume .bc-cancer-logo {
+  width: 217px;
+  height: 50px;
+}
+/* line 275, sass/main.scss */
+#resume .galdos-logo {
+  width: 188px;
+  height: 50px;
+}
+/* line 280, sass/main.scss */
+#resume .content-list {
+  margin-top: 10px;
+}
+
+/** Styles for the PROJECTS section */
+/* line 287, sass/main.scss */
+#projects .project {
+  clear: both;
+  overflow: auto;
+  padding: 0px 5px 0px 10px;
+}
+/* line 292, sass/main.scss */
+#projects .project .box {
+  background-color: #f9f9f9;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+}
+/* line 298, sass/main.scss */
+#projects .project .project-header {
+  border-bottom: 1px dotted #A3A3A3;
+  padding-bottom: 3px;
+  display: block;
+}
+/* line 304, sass/main.scss */
+#projects .project .title {
+  font-weight: 600;
+}
+/* line 308, sass/main.scss */
+#projects .project .preview {
+  float: left;
+}
+/* line 312, sass/main.scss */
+#projects .project .desc {
   margin-left: 310px;
 }
-/* line 143, sass/main.scss */
-.project .thumbnail {
+/* line 316, sass/main.scss */
+#projects .project .thumbnail {
   width: 275px;
   height: 200px;
   border: 3px solid #fff;
-  box-shadow: 0 0 0 2px #666;
+  box-shadow: 0 0 0 1px #666;
 }
 
-/* line 151, sass/main.scss */
-.about-me-thumbnail {
-  width: 200px;
-  height: 200px;
-  margin-left: 20px;
-  border: 3px solid #fff;
-  box-shadow: 0 0 0 2px #666;
+/** General classes */
+/* line 326, sass/main.scss */
+.fixed {
+  position: fixed;
+  top: 0;
+  height: 52px;
+  z-index: 1;
 }
 
-/* line 159, sass/main.scss */
+/* line 333, sass/main.scss */
+.link {
+  color: #268770;
+  border-bottom: 1px dotted #268770;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 340, sass/main.scss */
+.bolder {
+  font-weight: 600;
+}
+
+/* line 344, sass/main.scss */
 .date {
-  float: right;
+  display: block;
 }
 
-/* line 163, sass/main.scss */
+/* line 348, sass/main.scss */
 .button {
   background-color: #666;
   border: 2px solid #fff;
@@ -2472,173 +2720,168 @@ nav .header-title {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 5px;
+  padding: 10px;
 }
-/* line 174, sass/main.scss */
+/* line 360, sass/main.scss */
 .button a {
   color: #fff;
   border: none;
 }
 
-/* line 180, sass/main.scss */
+/* line 366, sass/main.scss */
 .map {
-  background-image: url("img/vancouver.png");
+  background-image: url("../img/vancouver.png");
   height: 30em;
 }
 
-/* line 185, sass/main.scss */
+/* line 371, sass/main.scss */
 .fa {
   padding-right: 5px;
 }
 
-/* line 189, sass/main.scss */
+/* line 375, sass/main.scss */
 .hide {
   display: none;
 }
 
-/* line 193, sass/main.scss */
+/* line 379, sass/main.scss */
 .center {
   text-align: center;
 }
 
-/* line 197, sass/main.scss */
+/* line 383, sass/main.scss */
 .circle {
   border-radius: 50%;
 }
 
-/* line 201, sass/main.scss */
+/* line 387, sass/main.scss */
 .clearfix {
   overflow: auto;
 }
 
-/* line 205, sass/main.scss */
-.list-no-style {
-  padding-left: 15px;
-}
-
-/* line 209, sass/main.scss */
-.list-no-style > li {
-  list-style-type: none;
-}
-
-/* line 213, sass/main.scss */
-.inline-list > li {
-  float: left;
-  list-style-position: inside;
-  list-style-type: disc;
-  margin-right: 1em;
-}
-
-/* line 220, sass/main.scss */
-.subtext {
-  font-style: italic;
-}
-
-/* line 224, sass/main.scss */
-.no-style {
-  border: none;
-}
-
+/** Media Queries */
 @media (max-width: 480px) {
-  /* line 229, sass/main.scss */
+  /* line 394, sass/main.scss */
   nav .anchors {
     display: none;
   }
 
-  /* line 233, sass/main.scss */
-  .main-section {
-    border-left: none;
-    border-right: none;
-  }
-  /* line 237, sass/main.scss */
-  .main-section .content {
-    padding: 1.25em;
+  /* line 398, sass/main.scss */
+  #container {
+    margin: 1.5em auto;
   }
 
-  /* line 242, sass/main.scss */
-  .project {
-    padding: 0.5em;
+  /* line 403, sass/main.scss */
+  #canvas .canvas-text {
+    font-size: 0.7em;
+    top: 5%;
   }
-  /* line 245, sass/main.scss */
-  .project .desc {
+
+  /* line 410, sass/main.scss */
+  .main-section .content {
+    padding: 1em;
+  }
+
+  /* line 417, sass/main.scss */
+  #projects .project .desc {
     margin-left: 0;
     display: inline-block;
   }
-  /* line 250, sass/main.scss */
-  .project .thumbnail {
-    width: 250px;
-    height: 150px;
+  /* line 422, sass/main.scss */
+  #projects .project .thumbnail {
+    width: 200px;
+    height: 100px;
   }
-  /* line 255, sass/main.scss */
-  .project .preview, .project .date, .project .title {
+  /* line 427, sass/main.scss */
+  #projects .project .preview, #projects .project .date, #projects .project .title {
     float: none;
     display: block;
     text-align: center;
   }
-
-  /* line 262, sass/main.scss */
-  .project:not(:first-child) {
+  /* line 434, sass/main.scss */
+  #projects .project:not(:first-child) {
     padding-top: 20px;
   }
-
-  /* line 268, sass/main.scss */
-  #about .preview {
-    display: block;
-    float: none;
-    text-align: center;
-  }
-  /* line 273, sass/main.scss */
-  #about .about-me-thumbnail {
-    margin-left: 0;
-    float: none;
+}
+@media (min-width: 725px) {
+  /* line 441, sass/main.scss */
+  .timeline > li {
+    overflow: hidden;
+    margin: 0;
+    position: relative;
   }
 
-  /* line 280, sass/main.scss */
-  .resume-item .title:not(:first-child) {
-    padding-top: 20px;
-  }
-  /* line 284, sass/main.scss */
-  .resume-item .date, .resume-item .title {
-    float: none;
-    display: block;
-  }
-
-  /* line 290, sass/main.scss */
-  .list-no-style {
-    padding: 0;
+  /* line 447, sass/main.scss */
+  .timeline-content {
+    width: 90%;
+    float: left;
+    border-left: 3px #E4E4E4 dotted;
+    padding-left: 35px;
+    margin-left: 20px;
   }
 }
 @media (max-width: 725px) {
-  /* line 296, sass/main.scss */
+  /* line 457, sass/main.scss */
   nav .anchors {
     display: none;
   }
 
-  /* line 301, sass/main.scss */
-  #about .preview {
+  /* line 461, sass/main.scss */
+  nav .header-title {
+    margin: 0 auto;
     display: block;
-    float: none;
-    text-align: center;
-  }
-  /* line 306, sass/main.scss */
-  #about .about-me-thumbnail {
-    margin-left: 0;
-    float: none;
   }
 
-  /* line 313, sass/main.scss */
-  .resume-item .date, .resume-item .title {
-    float: none;
+  /* line 467, sass/main.scss */
+  #canvas .canvas-text {
+    top: 20%;
+  }
+
+  /* line 473, sass/main.scss */
+  #resume .timeline-content .resume-logo {
     display: block;
+    float: none;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  /* line 481, sass/main.scss */
+  #resume .resume-date {
+    display: none;
+  }
+  /* line 485, sass/main.scss */
+  #resume .timeline {
+    padding-left: 0;
+  }
+  /* line 489, sass/main.scss */
+  #resume .timeline-content {
+    padding-left: 0;
+  }
+  /* line 492, sass/main.scss */
+  #resume .timeline-content h3.title .fa {
+    margin-left: 0;
+  }
+  /* line 496, sass/main.scss */
+  #resume .timeline-content .content-list {
+    padding-left: 20px;
+  }
+  /* line 501, sass/main.scss */
+  #resume .skills-list {
+    padding-left: 20px;
   }
 }
 @media (max-width: 960px) {
-  /* line 322, sass/main.scss */
-  .project .desc {
+  /* line 514, sass/main.scss */
+  #projects .project .desc {
+    margin-left: 0;
+  }
+  /* line 518, sass/main.scss */
+  #projects .project .desc {
     margin-left: 0;
     display: inline-block;
   }
-  /* line 327, sass/main.scss */
-  .project .preview, .project .date, .project .title {
+  /* line 523, sass/main.scss */
+  #projects .project .preview, #projects .project .date, #projects .project .title {
     float: none;
     display: block;
     text-align: center;
