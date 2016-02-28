@@ -5,6 +5,11 @@ $background: url("../img/dark-bg.jpg");
 $mapBackground: url("../img/vancouver.png");
 
 
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
 body {
 	font-family: 'Open Sans';
 	background-image: $background;
@@ -128,6 +133,9 @@ nav {
 #canvas {
 	background-color: #222;
 	position: relative;
+	height: 100%;
+	width: 100%;
+	display: table;
 
 	.canvas-text {
 		position: absolute;
@@ -389,6 +397,9 @@ nav {
 	overflow: auto;
 }
 
+.cursor {
+	cursor: pointer;
+}
 
 /** Media Queries */
 @media (max-width : 480px) {

@@ -1,5 +1,5 @@
 // Smoothly scroll to a section when a navigation link is clicked
-$(document).on("click", ".anchors a", function(evt) {
+$(document).on("click", ".anchors a, .arrow", function(evt) {
 	evt.preventDefault();
 
   var canvas = $("#canvas").get(0);
