@@ -4,6 +4,14 @@ $primaryFontColour: #777;
 $background: url("../img/dark-bg.jpg");
 $mapBackground: url("../img/vancouver.png");
 
+/** CSS Resets */
+// html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input,hr {margin:0; padding:0;}
+// h1,h2,h3,h4,h5,h6,pre,code,address,caption,cite,code,em,strong,th {font-size:1em; font-weight:normal; font-style:normal;}
+// ul,ol {list-style:none;}
+// fieldset,img,hr {border:none;}
+// caption,th {text-align:left;}
+// table {border-collapse:collapse; border-spacing:0;}
+// td {vertical-align:top;}
 
 html, body {
 	width: 100%;
@@ -133,9 +141,6 @@ nav {
 #canvas {
 	background-color: #222;
 	position: relative;
-	height: 100%;
-	width: 100%;
-	display: table;
 
 	.canvas-text {
 		position: absolute;
@@ -463,6 +468,12 @@ nav {
 		padding-left: 35px;
 		margin-left: 20px;
 	}
+
+	#canvas {
+		height: 100%;
+		width: 100%;
+		display: table;	
+	}
 } 
 
 @media (max-width: 725px) {
@@ -471,8 +482,9 @@ nav {
 	}		
 
 	nav .header-title {
-		margin: 0 auto;
-		display: block;
+	    width: 100%;
+	    padding: 0px;
+	    text-align: center;
 	}
 
 	#canvas {
