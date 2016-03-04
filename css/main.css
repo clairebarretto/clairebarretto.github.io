@@ -368,26 +368,27 @@ nav .header-title a {
   background-color: #f9f9f9;
   padding: 10px 15px;
   margin-bottom: 20px;
+  overflow: auto;
 }
-/* line 312, sass/main.scss */
+/* line 313, sass/main.scss */
 #projects .project .project-header {
   border-bottom: 1px dotted #A3A3A3;
   padding-bottom: 3px;
   display: block;
 }
-/* line 318, sass/main.scss */
+/* line 319, sass/main.scss */
 #projects .project .title {
   font-weight: 600;
 }
-/* line 322, sass/main.scss */
+/* line 323, sass/main.scss */
 #projects .project .preview {
   float: left;
 }
-/* line 326, sass/main.scss */
+/* line 327, sass/main.scss */
 #projects .project .desc {
   margin-left: 310px;
 }
-/* line 330, sass/main.scss */
+/* line 331, sass/main.scss */
 #projects .project .thumbnail {
   width: 275px;
   height: 200px;
@@ -396,7 +397,7 @@ nav .header-title a {
 }
 
 /** General classes */
-/* line 340, sass/main.scss */
+/* line 341, sass/main.scss */
 .fixed {
   position: fixed;
   top: 0;
@@ -404,7 +405,7 @@ nav .header-title a {
   z-index: 1;
 }
 
-/* line 347, sass/main.scss */
+/* line 348, sass/main.scss */
 .link {
   color: #268770;
   border-bottom: 1px dotted #268770;
@@ -412,17 +413,17 @@ nav .header-title a {
   cursor: pointer;
 }
 
-/* line 354, sass/main.scss */
+/* line 355, sass/main.scss */
 .bolder {
   font-weight: 600;
 }
 
-/* line 358, sass/main.scss */
+/* line 359, sass/main.scss */
 .date {
   display: block;
 }
 
-/* line 362, sass/main.scss */
+/* line 363, sass/main.scss */
 .button {
   background-color: #666;
   border: 2px solid #fff;
@@ -435,101 +436,101 @@ nav .header-title a {
   margin: 5px;
   padding: 10px;
 }
-/* line 374, sass/main.scss */
+/* line 375, sass/main.scss */
 .button a {
   color: #fff;
   border: none;
 }
 
-/* line 380, sass/main.scss */
+/* line 381, sass/main.scss */
 .map {
   background-image: url("../img/vancouver.png");
   height: 30em;
 }
 
-/* line 385, sass/main.scss */
+/* line 386, sass/main.scss */
 .fa {
   padding-right: 5px;
 }
 
-/* line 389, sass/main.scss */
+/* line 390, sass/main.scss */
 .hide {
   display: none;
 }
 
-/* line 393, sass/main.scss */
+/* line 394, sass/main.scss */
 .center {
   text-align: center;
 }
 
-/* line 397, sass/main.scss */
+/* line 398, sass/main.scss */
 .circle {
   border-radius: 50%;
 }
 
-/* line 401, sass/main.scss */
+/* line 402, sass/main.scss */
 .clearfix {
   overflow: auto;
 }
 
-/* line 405, sass/main.scss */
+/* line 406, sass/main.scss */
 .cursor {
   cursor: pointer;
 }
 
 /** Media Queries */
 @media (max-width: 480px) {
-  /* line 411, sass/main.scss */
+  /* line 412, sass/main.scss */
   nav .anchors {
     display: none;
   }
 
-  /* line 415, sass/main.scss */
+  /* line 416, sass/main.scss */
   #container {
     margin: 1.5em auto;
   }
 
-  /* line 420, sass/main.scss */
+  /* line 421, sass/main.scss */
   #canvas .canvas-text {
     font-size: 0.7em;
     top: 5%;
   }
 
-  /* line 427, sass/main.scss */
+  /* line 428, sass/main.scss */
   .main-section .content {
     padding: 1em;
   }
 
-  /* line 434, sass/main.scss */
+  /* line 435, sass/main.scss */
   #projects .project .desc {
     margin-left: 0;
     display: inline-block;
   }
-  /* line 439, sass/main.scss */
+  /* line 440, sass/main.scss */
   #projects .project .thumbnail {
     width: 200px;
     height: 100px;
   }
-  /* line 444, sass/main.scss */
+  /* line 445, sass/main.scss */
   #projects .project .preview, #projects .project .date, #projects .project .title {
     float: none;
     display: block;
     text-align: center;
   }
-  /* line 451, sass/main.scss */
+  /* line 452, sass/main.scss */
   #projects .project:not(:first-child) {
     padding-top: 20px;
   }
 }
 @media (min-width: 725px) {
-  /* line 458, sass/main.scss */
+  /* line 459, sass/main.scss */
   .timeline > li {
     overflow: hidden;
     margin: 0;
     position: relative;
   }
 
-  /* line 464, sass/main.scss */
+  /* line 465, sass/main.scss */
   .timeline-content {
     width: 90%;
     float: left;
@@ -538,7 +539,7 @@ nav .header-title a {
     margin-left: 20px;
   }
 
-  /* line 472, sass/main.scss */
+  /* line 473, sass/main.scss */
   #canvas {
     height: 100%;
     width: 100%;
@@ -546,24 +547,24 @@ nav .header-title a {
   }
 }
 @media (max-width: 725px) {
-  /* line 480, sass/main.scss */
+  /* line 481, sass/main.scss */
   nav .anchors {
     display: none;
   }
 
-  /* line 484, sass/main.scss */
+  /* line 485, sass/main.scss */
   nav .header-title {
     width: 100%;
     padding: 0px;
     text-align: center;
   }
 
-  /* line 491, sass/main.scss */
+  /* line 492, sass/main.scss */
   #canvas .canvas-text {
     top: 20%;
   }
 
-  /* line 497, sass/main.scss */
+  /* line 498, sass/main.scss */
   #resume .timeline-content .resume-logo {
     display: block;
     float: none;
@@ -571,42 +572,42 @@ nav .header-title a {
     margin-top: 0;
     margin-bottom: 10px;
   }
-  /* line 505, sass/main.scss */
+  /* line 506, sass/main.scss */
   #resume .resume-date {
     display: none;
   }
-  /* line 509, sass/main.scss */
+  /* line 510, sass/main.scss */
   #resume .timeline {
     padding-left: 0;
   }
-  /* line 513, sass/main.scss */
+  /* line 514, sass/main.scss */
   #resume .timeline-content {
     padding-left: 0;
   }
-  /* line 516, sass/main.scss */
+  /* line 517, sass/main.scss */
   #resume .timeline-content h3.title .fa {
     margin-left: 0;
   }
-  /* line 520, sass/main.scss */
+  /* line 521, sass/main.scss */
   #resume .timeline-content .content-list {
     padding-left: 20px;
   }
-  /* line 525, sass/main.scss */
+  /* line 526, sass/main.scss */
   #resume .skills-list {
     padding-left: 20px;
   }
 }
 @media (max-width: 960px) {
-  /* line 538, sass/main.scss */
+  /* line 539, sass/main.scss */
   #projects .project .desc {
     margin-left: 0;
   }
-  /* line 542, sass/main.scss */
+  /* line 543, sass/main.scss */
   #projects .project .desc {
     margin-left: 0;
     display: inline-block;
   }
-  /* line 547, sass/main.scss */
+  /* line 548, sass/main.scss */
   #projects .project .preview, #projects .project .date, #projects .project .title {
     float: none;
     display: block;
