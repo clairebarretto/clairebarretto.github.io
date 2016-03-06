@@ -1,22 +1,24 @@
 module.exports = function(grunt) {
 	grunt.initConfig({
+		buildDir: "build",
+
 		pkg: grunt.file.readJSON('package.json'),
 
 		concat: {
 			js: {
 				src: ['js/libs/jquery-2.2.0.min.js', 'js/libs/*.js', 'js/main.js'],
-				dest: 'js/scripts.js'
+				dest: '<%= buildDir %>/js/scripts.js'
 			},
 			css: {
 				src: ['css/libs/*.css', 'css/main.css'],
-				dest: 'css/styles.css'
+				dest: '<%= buildDir %>/css/styles.css'
 			}
 		},
 
 		uglify: {
 			js: {
 				files: {
-					'js/scripts.min.js': ['js/scripts.js']
+					'<%= buildDir %>/js/scripts.min.js': ['js/scripts.js']
 				}
 			}
 		},
@@ -24,7 +26,7 @@ module.exports = function(grunt) {
 		cssmin: {
 			target: {
 				files: {
-					'css/styles.min.css': ['css/styles.css']
+					'<%= buildDir %>/css/styles.min.css': ['css/styles.css']
 				}
 			}
 		},
@@ -39,15 +41,19 @@ module.exports = function(grunt) {
 		},
 
 		watch: {
-			js: {
-				files: 'js/*.js',
-				tasks: ['concat']
-			},
 			css: {
 				files: 'css/sass/*.scss',
-				tasks: ['compass', 'concat']
+				tasks: ['compass']
 			}
 		},
+
+		copy: {
+			build: {
+				files: [
+					{src: ["index.html", "img/**", "fonts/**", "files/**"], dest: "<%= buildDir %>/"}
+				]
+			}
+		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-concat');
@@ -55,5 +61,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-contrib-clean');
 
 };

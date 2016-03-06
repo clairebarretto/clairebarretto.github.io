@@ -1,21 +1,16 @@
+@import 'meyer-reset';
+
 $primaryColour: #268770;
 $primaryFontColour: #777;
 
 $background: url("../img/dark-bg.jpg");
 $mapBackground: url("../img/vancouver.png");
 
-/** CSS Resets */
-// html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input,hr {margin:0; padding:0;}
-// h1,h2,h3,h4,h5,h6,pre,code,address,caption,cite,code,em,strong,th {font-size:1em; font-weight:normal; font-style:normal;}
-// ul,ol {list-style:none;}
-// fieldset,img,hr {border:none;}
-// caption,th {text-align:left;}
-// table {border-collapse:collapse; border-spacing:0;}
-// td {vertical-align:top;}
 
 html, body {
 	width: 100%;
 	height: 100%;
+	font-size: 16px;
 }
 
 body {
@@ -38,12 +33,15 @@ header {
 	background-image: -webkit-linear-gradient(0deg, hsla(175,70%,40%,1) 16.666667%, hsla(150,70%,40%,1) 16.666667%, hsla(150,70%,40%,1) 33.333333%, hsla(75,70%,40%,1) 33.333333%, hsla(75,70%,40%,1) 50%, hsla(25,70%,40%,1) 50%, hsla(25,70%,40%,1) 66.666667%, hsla(10,70%,40%,1) 66.666667%, hsla(10,70%,40%,1) 83.333333%, hsla(300,70%,40%,1) 83.333333%);
 	background-image: -moz-linear-gradient(0deg, hsla(175,70%,40%,1) 16.666667%, hsla(150,70%,40%,1) 16.666667%, hsla(150,70%,40%,1) 33.333333%, hsla(75,70%,40%,1) 33.333333%, hsla(75,70%,40%,1) 50%, hsla(25,70%,40%,1) 50%, hsla(25,70%,40%,1) 66.666667%, hsla(10,70%,40%,1) 66.666667%, hsla(10,70%,40%,1) 83.333333%, hsla(300,70%,40%,1) 83.333333%);
 	background-image: linear-gradient(to right, hsla(175,70%,40%,1) 16.666667%, hsla(150,70%,40%,1) 16.666667%, hsla(150,70%,40%,1) 33.333333%, hsla(75,70%,40%,1) 33.333333%, hsla(75,70%,40%,1) 50%, hsla(25,70%,40%,1) 50%, hsla(25,70%,40%,1) 66.666667%, hsla(10,70%,40%,1) 66.666667%, hsla(10,70%,40%,1) 83.333333%, hsla(300,70%,40%,1) 83.333333%);
-	-webkit-background-size: 100% 3px;
-	-moz-background-size: 100% 3px;
 	background-size: 100% 5px;
 	background-repeat: no-repeat;
-	background-position: 0px 48px;
+	background-position: 0px 49px;
+	-webkit-background-size: 100% 3px;
+	-moz-background-size: 100% 3px;
+}
 
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 20px;
 }
 
 a {
@@ -51,6 +49,8 @@ a {
 }
 
 nav {
+	padding: 0em 2em;
+
 	li {
 		display: inline;
 	}
@@ -61,15 +61,14 @@ nav {
 
 	a {
 		color: $primaryFontColour;
-		font-size: 14px;
+		font-size: 0.9em;
 		letter-spacing: 2px;
 		text-transform: lowercase;
-		margin: 0px 12px;
+		margin: 0em 1em;
 		display: inline-block;
 	}
 
 	.anchors {
-		margin-right: 40px;
 		float: right;
 	
 		a:hover {
@@ -104,6 +103,38 @@ nav {
 	margin-bottom: 3em;
 }
 
+/** Canvas */
+#canvas {
+	width: 100%;
+	height: 100%;
+	display: table;
+	position: relative;
+	background-color: #222;
+
+	.canvas-text {
+		position: absolute;
+		width: 100%;
+		top: 40%;
+	}
+
+	.name, .subtext, .arrow {
+		width: 100%;
+		color: #fff;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		font-weight: 800;
+	}
+
+	.name {
+		font-size: 2em;
+	}
+
+	.subtext {
+		font-size: 1.5em;
+	}
+}
+
 /** Styles for all sections */
 .main-section {
 	margin-bottom: 1.5em;
@@ -113,7 +144,6 @@ nav {
 
 	.section-icon {
 		float: right;
-		color: #fff;
 		color: #F1F1F1;
 
 		.fa-file-text-o {
@@ -125,10 +155,10 @@ nav {
 		font-size: 2em;
 		color: $primaryColour;
 		text-transform: lowercase;
-		padding-bottom: 30px;
+		padding-bottom: 1.5em;
 
 		span {
-			border-bottom: 2px solid $primaryColour;
+			border-bottom: 3px solid $primaryColour;
 		}
 	}
 
@@ -137,35 +167,20 @@ nav {
 	}
 }
 
-/** Canvas */
-#canvas {
-	background-color: #222;
-	position: relative;
-
-	.canvas-text {
-		position: absolute;
-		top: 40%;
-		width: 100%;
-	}
-
-	.name, .subtext, .arrow {
-		text-align: center;
-		text-transform: uppercase;
-		color: #fff;
-		letter-spacing: 5px;
-		width: 100%;
-	}
-}
-
 /** Styles for the ABOUT ME section */
 #about {
 	img {
+		margin-top: 1em;
 		width: 100px; 
 		height: 100px;
+
+		.seahawks {
+			opacity: 0.8;
+		}
+	}	
+
+	img:not(:last-child) {
 		margin-right: 20px;
-	}
-	img.seahawks {
-		opacity: 0.8;
 	}	
 }
 
@@ -173,18 +188,18 @@ nav {
 #resume {
 	.timeline {
 		list-style: none;
-		padding-left: 10px;
+		padding: 0;
 	}
 
 	.timeline-content {
-		padding-left: 35px;
+		padding-left: 2.5em;
 
 		.icon {
-			margin-left: -50px;
+			margin-left: -53px;
 		}
 
 		.resume-date {
-		    margin-left: -70px;
+		    margin-left: -73px;
 		    float: left;
 		    font-size: smaller;
 		    background-color: #268770;
@@ -195,7 +210,7 @@ nav {
 
 		.box {
 			background-color: #f9f9f9;
-			padding: 10px 15px;
+			padding: 15px;
 			border-radius: 10px;
 			margin-bottom: 20px;
 		}
@@ -235,7 +250,7 @@ nav {
 
 		.w-100 { width: 100%; }
 		.w-95 { width: 95%; }
-		.w-90 { width: 90% !important; }
+		.w-90 { width: 90%; }
 		.w-85 { width: 85%; }
 		.w-80 { width: 80%; }
 		.w-75 { width: 75%; }
@@ -271,11 +286,16 @@ nav {
 	}
 
 	.resume-logo {
-		margin-top: 15px;
-		margin-right: 20px;
+		margin-top: 1em;
+		margin-right: 1.5em;
 		float: right;
 	}
 
+	.content-list, .skills-list {
+		margin-top: 10px;
+	}
+
+	// Specific logo sizes relative to original sizes (50px height)
 	.ubc-logo {
 		width: 163px;
 		height: 50px;
@@ -290,10 +310,6 @@ nav {
 		width: 188px;
 		height: 50px;
 	}	
-
-	.content-list {
-		margin-top: 10px;
-	}
 }
 
 /** Styles for the PROJECTS section */
@@ -301,18 +317,18 @@ nav {
 	.project {
 		clear: both;
 		overflow: auto;
-		padding: 0px 5px 0px 10px;
+		padding: 0em 1em 0em 1em;
 
 		.box {
 			background-color: #f9f9f9;
-			padding: 10px 15px;
-			margin-bottom: 20px;
+			padding: 0.5em 1em;
+			margin-bottom: 1.5em;
 			overflow: auto;
 		}
 
 		.project-header {
 			border-bottom: 1px dotted #A3A3A3;
-			padding-bottom: 3px;
+			padding-bottom: 0.3em;
 			display: block;
 		}
 
@@ -320,21 +336,32 @@ nav {
 			font-weight: 600;
 		}
 
+		.date {
+			font-size: smaller;
+			display: block;
+		}
+
 		.preview {
 			float: left;
 		}
 
 		.desc {
-			margin-left: 310px;
+			margin-left: 270px;
 		}
 
 		.thumbnail {
-			width: 275px;
+			width: 250px;
 			height: 200px;
-			border: 3px solid #fff;
-			box-shadow: 0 0 0 1px #666;
+			border: 1px solid #d2d2d2;
 		}		
 	}	
+}
+
+#contact {
+	button {
+		display: block;
+		margin-bottom: 1em;
+	}
 }
 
 /** General classes */
@@ -354,10 +381,6 @@ nav {
 
 .bolder {
 	font-weight: 600;
-}
-
-.date {
-	display: block;
 }
 
 .button {
@@ -417,13 +440,6 @@ nav {
 		margin: 1.5em auto;
 	}
 
-	#canvas {
-		.canvas-text {
-			font-size: 0.7em;
-			top: 5%;
-		}
-	}
-
 	.main-section {
 		.content {
 			padding: 1em;
@@ -455,29 +471,7 @@ nav {
 	}
 }
 
-@media (min-width: 725px) {
-	.timeline > li {
-		overflow: hidden;
-		margin: 0;
-		position: relative;
-	}
-
-	.timeline-content {
-		width: 90%;
-		float: left;
-		border-left: 3px #E4E4E4 dotted;
-		padding-left: 35px;
-		margin-left: 20px;
-	}
-
-	#canvas {
-		height: 100%;
-		width: 100%;
-		display: table;	
-	}
-} 
-
-@media (max-width: 725px) {
+@media (max-width: 768px) {
 	nav .anchors {
 		display: none;
 	}		
@@ -486,12 +480,6 @@ nav {
 	    width: 100%;
 	    padding: 0px;
 	    text-align: center;
-	}
-
-	#canvas {
-		.canvas-text {
-			top: 20%;
-		}
 	}
 
 	#resume {
@@ -527,10 +515,6 @@ nav {
 			padding-left: 20px;
 		}
 	}
-
-	#resume {
-
-	}
 }
 
 @media (max-width: 960px) {		
@@ -553,3 +537,19 @@ nav {
 		}
 	}	
 }
+
+@media (min-width: 769px) {
+	.timeline > li {
+		overflow: hidden;
+		margin: 0;
+		position: relative;
+	}
+
+	.timeline-content {
+		width: 90%;
+		float: left;
+		border-left: 3px #E4E4E4 dotted;
+		padding-left: 35px;
+		margin-left: 20px;
+	}
+} 

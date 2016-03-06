@@ -601,7 +601,7 @@ var data = {
   "projects": [{
     "id": "spotify",
     "projectName": "Spotify Search",
-    "date": "March 2016",
+    "date": "February 2016",
     "previewImg": "img/projects/spotify.png",
     "description": "Developed a simple AngularJS application to search for tracks on Spotify using " + createLink("Spotify's Web API", "https://developer.spotify.com/web-api/") + ". Has the ability to preview songs for up to 30 seconds. First Angular project!",
     "skills": ["HTML5", "CSS3", "JavaScript", "AngularJS"],
