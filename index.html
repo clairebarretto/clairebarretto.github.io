@@ -88,7 +88,7 @@
 							</div>	
 						</div>				
 					</li>
-					<li class="download center"></li>					
+					<li class="download center buttons"></li>					
 				</ul>		  
 			</div>
 		</section>
@@ -112,11 +112,9 @@
 	<!-- TEMPLATES -->
 	<script id="projectTemplate" type="text/x-handlebars-template">
 		<div class="project">
-			<div class="project-header clearfix">
-				<div class="pull-left">
-					<span class="title">{{projectName}}</span>
-					<small class="date"><i class="fa fa-calendar"></i> {{date}}</small>
-				</div>
+			<div class="project-header">
+				<span class="title">{{projectName}}</span>
+				<small class="date"><i class="fa fa-calendar"></i> {{date}}</small>
 			</div>	
 			<div class="box">			
 				<p class="preview"><a href="{{previewImg}}" data-lightbox="{{id}}"><img src="{{previewImg}}" class="thumbnail"/></a></p>

@@ -1,6 +1,7 @@
 $(function() {
   renderParticles();
 	renderContent();
+  initScroll();
 });
 
 // Resume data and configuration object
@@ -423,6 +424,18 @@ function isInViewport(elem) {
   var bottom = elem.getBoundingClientRect().bottom;
 
   return top < window.innerHeight && bottom >= 0;
+}
+
+// Initialize the scroll reveal plugin
+function initScroll() {
+  window.sr = ScrollReveal();
+  sr.reveal('.canvas-text', {
+    origin: 'top',
+    distance: '80%'
+  });  
+  sr.reveal('.box, .images, .button', {
+    viewFactor: 0.15
+  });  
 }
 
 // Smoothly scroll to a section when a navigation link is clicked
