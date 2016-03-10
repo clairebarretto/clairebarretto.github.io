@@ -2551,7 +2551,7 @@ nav .header-title a {
 /* line 215, sass/main.scss */
 #resume .timeline-content .box {
   background-color: #f9f9f9;
-  padding: 15px;
+  padding: 1em;
   margin-bottom: 20px;
   border-bottom: 2px solid #E6E6E6;
 }
@@ -2559,13 +2559,17 @@ nav .header-title a {
 #resume .timeline-content .subcontent {
   float: left;
 }
-/* line 228, sass/main.scss */
+/* line 227, sass/main.scss */
+#resume .skills-progress {
+  padding-right: 1.5em;
+}
+/* line 230, sass/main.scss */
 #resume .skills-progress .skill-bg {
   background-color: #E6E6E6;
   height: 24px;
   margin-top: 8px;
 }
-/* line 234, sass/main.scss */
+/* line 236, sass/main.scss */
 #resume .skills-progress .skill-inner {
   padding: 0px 10px;
   border-top-right-radius: 5px;
@@ -2573,160 +2577,157 @@ nav .header-title a {
   line-height: 24px;
   height: 24px;
 }
-/* line 242, sass/main.scss */
+/* line 244, sass/main.scss */
 #resume .skills-progress .tech, #resume .skills-progress .percentage {
   color: #fff;
   font-size: smaller;
 }
-/* line 247, sass/main.scss */
+/* line 249, sass/main.scss */
 #resume .skills-progress .tech {
   float: left;
 }
-/* line 251, sass/main.scss */
+/* line 253, sass/main.scss */
 #resume .skills-progress .percentage {
   float: right;
 }
-/* line 255, sass/main.scss */
+/* line 257, sass/main.scss */
 #resume .skills-progress .w-100 {
   width: 100%;
 }
-/* line 256, sass/main.scss */
+/* line 258, sass/main.scss */
 #resume .skills-progress .w-95 {
   width: 95%;
 }
-/* line 257, sass/main.scss */
+/* line 259, sass/main.scss */
 #resume .skills-progress .w-90 {
   width: 90%;
 }
-/* line 258, sass/main.scss */
+/* line 260, sass/main.scss */
 #resume .skills-progress .w-85 {
   width: 85%;
 }
-/* line 259, sass/main.scss */
+/* line 261, sass/main.scss */
 #resume .skills-progress .w-80 {
   width: 80%;
 }
-/* line 260, sass/main.scss */
+/* line 262, sass/main.scss */
 #resume .skills-progress .w-75 {
   width: 75%;
 }
-/* line 261, sass/main.scss */
+/* line 263, sass/main.scss */
 #resume .skills-progress .w-70 {
   width: 70%;
 }
-/* line 262, sass/main.scss */
+/* line 264, sass/main.scss */
 #resume .skills-progress .w-65 {
   width: 65%;
 }
-/* line 263, sass/main.scss */
+/* line 265, sass/main.scss */
 #resume .skills-progress .w-60 {
   width: 60%;
 }
-/* line 264, sass/main.scss */
+/* line 266, sass/main.scss */
 #resume .skills-progress .w-55 {
   width: 55%;
 }
-/* line 265, sass/main.scss */
+/* line 267, sass/main.scss */
 #resume .skills-progress .w-50 {
   width: 50%;
 }
-/* line 266, sass/main.scss */
+/* line 268, sass/main.scss */
 #resume .skills-progress .w-45 {
   width: 45%;
 }
-/* line 267, sass/main.scss */
+/* line 269, sass/main.scss */
 #resume .skills-progress .w-40 {
   width: 40%;
 }
-/* line 268, sass/main.scss */
+/* line 270, sass/main.scss */
 #resume .skills-progress .w-35 {
   width: 35%;
 }
-/* line 269, sass/main.scss */
+/* line 271, sass/main.scss */
 #resume .skills-progress .w-30 {
   width: 30%;
 }
-/* line 270, sass/main.scss */
+/* line 272, sass/main.scss */
 #resume .skills-progress .w-25 {
   width: 25%;
 }
-/* line 271, sass/main.scss */
+/* line 273, sass/main.scss */
 #resume .skills-progress .w-20 {
   width: 20%;
 }
-/* line 272, sass/main.scss */
+/* line 274, sass/main.scss */
 #resume .skills-progress .w-15 {
   width: 15%;
 }
-/* line 273, sass/main.scss */
+/* line 275, sass/main.scss */
 #resume .skills-progress .w-10 {
   width: 10%;
 }
-/* line 275, sass/main.scss */
+/* line 277, sass/main.scss */
 #resume .skills-progress .teal {
   background-color: #1EAEA2;
 }
-/* line 276, sass/main.scss */
+/* line 278, sass/main.scss */
 #resume .skills-progress .green {
   background-color: #5CB85C;
 }
-/* line 277, sass/main.scss */
+/* line 279, sass/main.scss */
 #resume .skills-progress .blue {
   background-color: #5BC0DE;
 }
-/* line 278, sass/main.scss */
+/* line 280, sass/main.scss */
 #resume .skills-progress .orange {
   background-color: #F0AD4E;
 }
-/* line 279, sass/main.scss */
+/* line 281, sass/main.scss */
 #resume .skills-progress .red {
   background-color: #D9534F;
 }
-/* line 280, sass/main.scss */
+/* line 282, sass/main.scss */
 #resume .skills-progress .dark-blue {
   background-color: #337AB7;
 }
-/* line 283, sass/main.scss */
+/* line 285, sass/main.scss */
 #resume .role, #resume .skills-header {
   font-weight: 600;
 }
-/* line 287, sass/main.scss */
+/* line 289, sass/main.scss */
 #resume h3.title {
   font-weight: 600;
   font-size: 1.5em;
 }
-/* line 292, sass/main.scss */
+/* line 294, sass/main.scss */
 #resume .resume-logo {
   margin-top: 1em;
   margin-right: 1.5em;
   float: right;
 }
-/* line 298, sass/main.scss */
+/* line 300, sass/main.scss */
 #resume .content-list, #resume .skills-list {
-  margin-top: 10px;
+  margin-top: 0.8em;
+  margin-right: 1em;
 }
-/* line 303, sass/main.scss */
+/* line 306, sass/main.scss */
 #resume .ubc-logo {
   width: 163px;
   height: 50px;
 }
-/* line 308, sass/main.scss */
+/* line 311, sass/main.scss */
 #resume .bc-cancer-logo {
   width: 217px;
   height: 50px;
 }
-/* line 313, sass/main.scss */
+/* line 316, sass/main.scss */
 #resume .galdos-logo {
   width: 188px;
   height: 50px;
 }
 
 /** Styles for the PROJECTS section */
-/* line 321, sass/main.scss */
-#projects .project {
-  padding: 0em 1em;
-}
-/* line 324, sass/main.scss */
+/* line 325, sass/main.scss */
 #projects .project .box {
   background-color: #f9f9f9;
   padding: 0.5em 1em;
@@ -2734,49 +2735,49 @@ nav .header-title a {
   overflow: auto;
   border-bottom: 2px solid #E6E6E6;
 }
-/* line 332, sass/main.scss */
+/* line 333, sass/main.scss */
 #projects .project .project-header {
   border-bottom: 1px dotted #A3A3A3;
   padding-bottom: 0.3em;
   display: block;
 }
-/* line 338, sass/main.scss */
+/* line 339, sass/main.scss */
 #projects .project .title {
   font-weight: 600;
 }
-/* line 342, sass/main.scss */
+/* line 343, sass/main.scss */
 #projects .project .date {
   font-size: smaller;
   display: block;
 }
-/* line 347, sass/main.scss */
+/* line 348, sass/main.scss */
 #projects .project .preview {
   float: left;
   position: relative;
 }
-/* line 352, sass/main.scss */
+/* line 353, sass/main.scss */
 #projects .project .desc {
   margin-left: 265px;
 }
-/* line 356, sass/main.scss */
+/* line 357, sass/main.scss */
 #projects .project .thumbnail {
   width: 250px;
   height: 200px;
   border: 1px solid #d2d2d2;
 }
-/* line 362, sass/main.scss */
+/* line 363, sass/main.scss */
 #projects .project .thumbnail:hover {
   border: 2px solid #b4b4b4;
 }
 
-/* line 369, sass/main.scss */
+/* line 370, sass/main.scss */
 #contact button {
   display: block;
   margin-bottom: 1em;
 }
 
 /** General classes */
-/* line 376, sass/main.scss */
+/* line 377, sass/main.scss */
 .fixed {
   position: fixed;
   top: 0;
@@ -2784,7 +2785,7 @@ nav .header-title a {
   z-index: 1;
 }
 
-/* line 383, sass/main.scss */
+/* line 384, sass/main.scss */
 .link {
   color: #268770;
   border-bottom: 1px dotted #268770;
@@ -2792,12 +2793,12 @@ nav .header-title a {
   cursor: pointer;
 }
 
-/* line 390, sass/main.scss */
+/* line 391, sass/main.scss */
 .bolder {
   font-weight: 600;
 }
 
-/* line 394, sass/main.scss */
+/* line 395, sass/main.scss */
 .button {
   background-color: #666;
   border: 2px solid #fff;
@@ -2810,100 +2811,100 @@ nav .header-title a {
   margin: 5px;
   padding: 10px;
 }
-/* line 406, sass/main.scss */
+/* line 407, sass/main.scss */
 .button a {
   color: #fff;
   border: none;
 }
 
-/* line 412, sass/main.scss */
+/* line 413, sass/main.scss */
 .map {
   background-image: url("../img/vancouver.png");
   height: 30em;
 }
 
-/* line 417, sass/main.scss */
+/* line 418, sass/main.scss */
 .fa {
   padding-right: 5px;
 }
 
-/* line 421, sass/main.scss */
+/* line 422, sass/main.scss */
 .hide {
   display: none;
 }
 
-/* line 425, sass/main.scss */
+/* line 426, sass/main.scss */
 .center {
   text-align: center;
 }
 
-/* line 429, sass/main.scss */
+/* line 430, sass/main.scss */
 .circle {
   border-radius: 50%;
 }
 
-/* line 433, sass/main.scss */
+/* line 434, sass/main.scss */
 .clearfix {
   overflow: auto;
 }
 
-/* line 437, sass/main.scss */
+/* line 438, sass/main.scss */
 .cursor {
   cursor: pointer;
 }
 
 /** Media Queries */
 @media (max-width: 480px) {
-  /* line 443, sass/main.scss */
+  /* line 444, sass/main.scss */
   nav .anchors {
     display: none;
   }
 
-  /* line 447, sass/main.scss */
+  /* line 448, sass/main.scss */
   #container {
     margin: 1.5em auto;
   }
 
-  /* line 452, sass/main.scss */
+  /* line 453, sass/main.scss */
   .main-section .content {
     padding: 1em;
   }
 
-  /* line 459, sass/main.scss */
+  /* line 460, sass/main.scss */
   #projects .project .desc {
     margin-left: 0;
     display: inline-block;
   }
-  /* line 464, sass/main.scss */
+  /* line 465, sass/main.scss */
   #projects .project .thumbnail {
     width: 200px;
     height: 100px;
   }
-  /* line 469, sass/main.scss */
+  /* line 470, sass/main.scss */
   #projects .project .preview, #projects .project .date, #projects .project .title {
     float: none;
     display: block;
     text-align: center;
   }
-  /* line 476, sass/main.scss */
+  /* line 477, sass/main.scss */
   #projects .project:not(:first-child) {
     padding-top: 20px;
   }
 }
 @media (max-width: 768px) {
-  /* line 483, sass/main.scss */
+  /* line 484, sass/main.scss */
   nav .anchors {
     display: none;
   }
 
-  /* line 487, sass/main.scss */
+  /* line 488, sass/main.scss */
   nav .header-title {
     width: 100%;
     padding: 0px;
     text-align: center;
   }
 
-  /* line 494, sass/main.scss */
+  /* line 495, sass/main.scss */
   #resume .timeline-content .resume-logo {
     display: block;
     float: none;
@@ -2911,42 +2912,42 @@ nav .header-title a {
     margin-top: 0;
     margin-bottom: 10px;
   }
-  /* line 502, sass/main.scss */
+  /* line 503, sass/main.scss */
   #resume .resume-date {
     display: none;
   }
-  /* line 506, sass/main.scss */
+  /* line 507, sass/main.scss */
   #resume .timeline {
     padding-left: 0;
   }
-  /* line 510, sass/main.scss */
+  /* line 511, sass/main.scss */
   #resume .timeline-content {
     padding-left: 0;
   }
-  /* line 513, sass/main.scss */
+  /* line 514, sass/main.scss */
   #resume .timeline-content h3.title .fa {
     margin-left: 0;
   }
-  /* line 517, sass/main.scss */
+  /* line 518, sass/main.scss */
   #resume .timeline-content .content-list {
     padding-left: 20px;
   }
-  /* line 522, sass/main.scss */
+  /* line 523, sass/main.scss */
   #resume .skills-list {
     padding-left: 20px;
   }
 }
 @media (max-width: 960px) {
-  /* line 531, sass/main.scss */
+  /* line 532, sass/main.scss */
   #projects .project .desc {
     margin-left: 0;
   }
-  /* line 535, sass/main.scss */
+  /* line 536, sass/main.scss */
   #projects .project .desc {
     margin-left: 0;
     display: inline-block;
   }
-  /* line 540, sass/main.scss */
+  /* line 541, sass/main.scss */
   #projects .project .preview, #projects .project .date, #projects .project .title {
     float: none;
     display: block;
@@ -2954,16 +2955,16 @@ nav .header-title a {
   }
 }
 @media (min-width: 769px) {
-  /* line 550, sass/main.scss */
+  /* line 551, sass/main.scss */
   .timeline > li {
     overflow: hidden;
     margin: 0;
     position: relative;
   }
 
-  /* line 556, sass/main.scss */
+  /* line 557, sass/main.scss */
   .timeline-content {
-    width: 90%;
+    width: 100%;
     float: left;
     border-left: 3px #E4E4E4 dotted;
     padding-left: 35px;

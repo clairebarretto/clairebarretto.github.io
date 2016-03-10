@@ -214,7 +214,7 @@ nav {
 
 		.box {
 			background-color: #f9f9f9;
-			padding: 15px;
+			padding: 1em;
 			margin-bottom: 20px;
 			border-bottom: 2px solid #E6E6E6;
 		}
@@ -225,6 +225,8 @@ nav {
 	}
 
 	.skills-progress {
+		padding-right: 1.5em;
+
 		.skill-bg {
 			background-color: #E6E6E6;
 			height: 24px;
@@ -296,7 +298,8 @@ nav {
 	}
 
 	.content-list, .skills-list {
-		margin-top: 10px;
+		margin-top: 0.8em;
+		margin-right: 1em;
 	}
 
 	// Specific logo sizes relative to original sizes (50px height)
@@ -319,8 +322,6 @@ nav {
 /** Styles for the PROJECTS section */
 #projects {
 	.project {
-		padding: 0em 1em;
-
 		.box {
 			background-color: #f9f9f9;
 			padding: 0.5em 1em;
@@ -554,7 +555,7 @@ nav {
 	}
 
 	.timeline-content {
-		width: 90%;
+		width: 100%;
 		float: left;
 		border-left: 3px #E4E4E4 dotted;
 		padding-left: 35px;
