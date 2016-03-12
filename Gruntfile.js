@@ -1,12 +1,12 @@
 module.exports = function(grunt) {
 	grunt.initConfig({
-		buildDir: "build",
+		buildDir: ".",
 
 		pkg: grunt.file.readJSON('package.json'),
 
 		concat: {
 			js: {
-				src: ['js/libs/jquery-2.2.0.min.js', 'js/libs/*.js', 'js/main.js'],
+				src: ['js/libs/jquery-2.2.0.min.js', 'js/libs/*.js', 'js/data.js', 'js/main.js'],
 				dest: '<%= buildDir %>/js/scripts.js'
 			},
 			css: {
@@ -41,6 +41,10 @@ module.exports = function(grunt) {
 		},
 
 		watch: {
+			js: {
+				files: 'js/main.js',
+				tasks: ['concat']
+			},
 			css: {
 				files: 'css/sass/*.scss',
 				tasks: ['compass', 'concat']
