@@ -176,16 +176,17 @@ function initScroll() {
   sr.reveal(".canvas-text .subtext", {
     origin: "left",
     distance: "50%",
-    delay: "200"
+    delay: "400"
   });  
   sr.reveal(".canvas-text .name", {
     origin: "right",
     distance: "50%",
-    delay: "200"
+    delay: "400"
   });  
   sr.reveal(".canvas-text .arrow", {
     origin: "bottom",
-    delay: "200"
+    distance: "50%",
+    delay: "400"
   });  
   sr.reveal(".box, .images, .button", {
     viewFactor: 0.15
@@ -207,13 +208,9 @@ $(document).on("click", ".anchors a, .arrow", function(evt) {
 
 // Make the navigation bar sticky after scrolling down past the canvas
 $(window).bind("scroll", function() {
-  var navHeight = $( window ).height() - 60;
-  if ($(window).scrollTop() > navHeight) {
-   	$("header").addClass("fixed");
- 	}
- 	else {
-   	$("header").removeClass("fixed");
- 	}
+  var navHeight = $(window).height();
+
+  $(window).scrollTop() > navHeight ? $("header").addClass("fixed") : $("header").removeClass("fixed");
 });
 
 
